@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Master</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="top">All Calculator Here</div>
+    <div class="container">
+        <div class="calculator">
+            <h2>Basic Calculator</h2>
+            <input type="number" id="num1" placeholder="Number1">
+            <input type="number" id="num2" placeholder="Number2">
+            <select id="operator">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+                <option value="remainder">%</option>
+                <option value="interest">Interest</option>
+            </select>
+            <button onclick="calculate()">Calculate</button>
+            <div id="result">Result:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Fahrenheit to Celsius Converter</h2>
+            <input type="number" id="fahrenheitInput">
+            <button onclick="convertFahrenheitToCelsius()">Convert</button>
+            <div id="fahrenheitToCelsiusResult">Result:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Celsius to Fahrenheit Converter</h2>
+            <input type="number" id="celsiusInput">
+            <button onclick="convertCelsiusToFahrenheit()">Convert</button>
+            <div id="celsiusToFahrenheitResult">Result:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Circle</h2>
+            <input type="number" id="circleRadius">
+            <button onclick="calculateAreaOfCircle()">Calculate</button>
+            <div id="circleAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Rectangle</h2>
+            <input type="number" id="rectangleLength" placeholder="length">
+            <input type="number" id="rectangleWidth" placeholder="Width">
+            <button onclick="calculateAreaOfRectangle()">Calculate</button>
+            <div id="rectangleAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Square</h2>
+            <input type="number" id="squareSide">
+            <button onclick="calculateAreaOfSquare()">Calculate</button>
+            <div id="squareAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Triangle</h2>
+            <input type="number" id="triangleBase" placeholder="Base">
+            <input type="number" id="triangleHeight" placeholder="Height">
+            <button onclick="calculateAreaOfTriangle()">Calculate</button>
+            <div id="triangleAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Parallelogram</h2>
+            <input type="number" id="parallelogramBase" placeholder="Base">
+            <input type="number" id="parallelogramHeight" placeholder="Height">
+            <button onclick="calculateAreaOfParallelogram()">Calculate</button>
+            <div id="parallelogramAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Rhombus</h2>
+            <input type="number" id="rhombusDiagonal1" placeholder="Diagonal1">
+            <input type="number" id="rhombusDiagonal2" placeholder="Diagonal2">
+            <button onclick="calculateAreaOfRhombus()">Calculate</button>
+            <div id="rhombusAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Trapezoid</h2>
+            <input type="number" id="trapezoidBase1" placeholder="Base1">
+            <input type="number" id="trapezoidBase2" placeholder="Base2">
+            <input type="number" id="trapezoidHeight" placeholder="Height">
+            <button onclick="calculateAreaOfTrapezoid()">Calculate</button>
+            <div id="trapezoidAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Ellipse</h2>
+            <input type="number" id="ellipseAxisA" placeholder="axisA">
+            <input type="number" id="ellipseAxisB" placeholder="axisB">
+            <button onclick="calculateAreaOfEllipse()">Calculate</button>
+            <div id="ellipseAreaResult">Area:</div>
+        </div>
+
+        <div class="calculator">
+            <h2>Area of Cube</h2>
+            <input type="number" id="cubeSide">
+            <button onclick="calculateAreaOfCube()">Calculate</button>
+            <div id="cubeAreaResult">Area:</div>
+        </div>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
